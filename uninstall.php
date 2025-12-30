@@ -1,15 +1,25 @@
 <?php
 
-if (!defined('WP_UNINSTALL_PLUGIN')) {
+if (! defined('WP_UNINSTALL_PLUGIN')) {
     exit;
 }
 
-$KT = new \Kama_Thumbnail_Plugin();
+require_once __DIR__.'/autoload.php';
 
-$KT->_clear_cache();
-$KT->_delete_meta();
+use KamaThumb\Infrastructure\WordPress\ServiceContainer;
 
-delete_option(Kama_Thumbnail_Plugin::$opt_name);
+$container = ServiceContainer::getInstance();
+$storage = $container->getStorage();
+
+$deletedCount = $storage->clearCache();
+
+global $wpdb;
+$wpdb->query("DELETE FROM {$wpdb->postmeta} WHERE meta_key LIKE 'kama_thumb_%'");
+
+delete_option('kama_thumbnail');
 delete_option('kama_thumb_version');
 
-@ rmdir($KT->opt->cache_folder);
+$cacheDir = $storage->path('');
+if (is_dir($cacheDir)) {
+    @rmdir($cacheDir);
+}

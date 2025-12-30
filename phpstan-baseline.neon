@@ -1,0 +1,176 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Function add_filter not found\\.$#"
+			count: 1
+			path: functions.php
+
+		-
+			message: "#^Function esc_attr not found\\.$#"
+			count: 1
+			path: functions.php
+
+		-
+			message: "#^Function esc_url not found\\.$#"
+			count: 1
+			path: functions.php
+
+		-
+			message: "#^Function get_option not found\\.$#"
+			count: 1
+			path: functions.php
+
+		-
+			message: "#^Function get_post_thumbnail_id not found\\.$#"
+			count: 1
+			path: functions.php
+
+		-
+			message: "#^Function get_the_ID not found\\.$#"
+			count: 1
+			path: functions.php
+
+		-
+			message: "#^Function get_the_title not found\\.$#"
+			count: 1
+			path: functions.php
+
+		-
+			message: "#^Function thumb_a_img not found\\.$#"
+			count: 1
+			path: functions.php
+
+		-
+			message: "#^Function thumb_img not found\\.$#"
+			count: 2
+			path: functions.php
+
+		-
+			message: "#^Function thumb_src not found\\.$#"
+			count: 1
+			path: functions.php
+
+		-
+			message: "#^Function wp_parse_args not found\\.$#"
+			count: 1
+			path: functions.php
+
+		-
+			message: "#^Function get_attached_file not found\\.$#"
+			count: 1
+			path: src/Application/ThumbnailService.php
+
+		-
+			message: "#^Function __ not found\\.$#"
+			count: 3
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function add_action not found\\.$#"
+			count: 2
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function add_filter not found\\.$#"
+			count: 1
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function add_query_arg not found\\.$#"
+			count: 1
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function add_submenu_page not found\\.$#"
+			count: 1
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function admin_url not found\\.$#"
+			count: 1
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function check_admin_referer not found\\.$#"
+			count: 1
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function current_user_can not found\\.$#"
+			count: 2
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function is_admin not found\\.$#"
+			count: 1
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function wp_die not found\\.$#"
+			count: 1
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function wp_redirect not found\\.$#"
+			count: 1
+			path: src/Infrastructure/WordPress/Plugin.php
+
+		-
+			message: "#^Function delete_option not found\\.$#"
+			count: 2
+			path: uninstall.php
+
+		-
+			message: "#^Function get_file_data not found\\.$#"
+			count: 1
+			path: upgrade.php
+
+		-
+			message: "#^Function get_option not found\\.$#"
+			count: 1
+			path: upgrade.php
+
+		-
+			message: "#^Function update_option not found\\.$#"
+			count: 1
+			path: upgrade.php
+
+		-
+			message: "#^Function add_action not found\\.$#"
+			count: 1
+			path: wp-thumbnail-plugin.php
+
+		-
+			message: "#^Function get_template_directory not found\\.$#"
+			count: 1
+			path: wp-thumbnail-plugin.php
+
+		-
+			message: "#^Function get_template_directory_uri not found\\.$#"
+			count: 1
+			path: wp-thumbnail-plugin.php
+
+		-
+			message: "#^Function is_admin not found\\.$#"
+			count: 1
+			path: wp-thumbnail-plugin.php
+
+		-
+			message: "#^Function load_plugin_textdomain not found\\.$#"
+			count: 1
+			path: wp-thumbnail-plugin.php
+
+		-
+			message: "#^Function plugin_dir_url not found\\.$#"
+			count: 1
+			path: wp-thumbnail-plugin.php
+
+		-
+			message: "#^Function wp_doing_ajax not found\\.$#"
+			count: 1
+			path: wp-thumbnail-plugin.php
+
+		-
+			message: "#^Function wp_normalize_path not found\\.$#"
+			count: 4
+			path: wp-thumbnail-plugin.php

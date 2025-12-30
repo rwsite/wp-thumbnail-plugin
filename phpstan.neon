@@ -1,0 +1,22 @@
+parameters:
+  level: 5
+  paths:
+    - src/
+    - functions.php
+    - wp-thumbnail-plugin.php
+    - upgrade.php
+    - uninstall.php
+
+  excludePaths:
+    - tests/
+    - vendor/
+    - languages/
+    - .git/
+
+  reportUnmatchedIgnoredErrors: false
+  treatPhpDocTypesAsCertain: false
+
+  tmpDir: .phpstan
+
+includes:
+  - phpstan-baseline.neon
