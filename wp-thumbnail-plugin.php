@@ -11,8 +11,8 @@
  * Author URI:      https://rwsite.ru
  *
  * Tags:            thumbnail, webp, image, resize, cache
- * Requires at least: 5.0
- * Tested up to:     6.7
+ * Requires at least: 5.6
+ * Tested up to:     6.9
  * Requires PHP:     7.4
  */
 
